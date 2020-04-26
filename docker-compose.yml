@@ -1,0 +1,46 @@
+version: '3.3'
+
+services:
+  api-poc:
+    container_name: api-poc
+    build:
+      context: ./api-poc
+      dockerfile: Dockerfile
+    volumes:
+      - ./api-poc:/var/www/html
+    ports:
+      - "1214:1214"
+    networks:
+      - swoole-lumen
+    depends_on:
+      - api-poc-tipo-cambio
+#   deploy:
+#     resources:
+#		  limits:
+#			  cpus: '1'
+#			  memory: 2Gi
+	  
+	  
+  api-poc-tipo-cambio:
+    container_name: api-poc-tipo-cambio
+    build:
+      context: ./api-poc-tipo-cambio
+      dockerfile: Dockerfile
+    volumes:
+      - ./api-poc-tipo-cambio:/var/www/html
+    ports:
+      - "1215:1215"
+    networks:
+      - swoole-lumen
+#    deploy:
+#      resources:
+#		  limits:
+#			  cpus: '1'
+#			  memory: 2Gi
+			  
+			  
+			  
+networks:
+  swoole-lumen:
+
+
