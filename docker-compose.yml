@@ -1,4 +1,4 @@
-version: '3.3'
+version: "3.3"
 
 services:
   api-poc:
@@ -16,11 +16,11 @@ services:
       - api-poc-tipo-cambio
 #   deploy:
 #     resources:
-#		  limits:
-#			  cpus: '1'
-#			  memory: 2Gi
-	  
-	  
+#       limits:
+#         cpus: '1'
+#         memory: 2Gi
+
+
   api-poc-tipo-cambio:
     container_name: api-poc-tipo-cambio
     build:
@@ -32,15 +32,14 @@ services:
       - "1215:1215"
     networks:
       - swoole-lumen
-#    deploy:
-#      resources:
-#		  limits:
-#			  cpus: '1'
-#			  memory: 2Gi
-			  
-			  
-			  
+#   deploy:
+#     resources:
+#       limits:
+#         cpus: '1'
+#         memory: 2Gi
+
+
+
 networks:
   swoole-lumen:
-
 
