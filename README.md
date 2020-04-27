@@ -3,7 +3,7 @@
 _Docker-Compose para el api principal y el api de tipo de cambio_
 
 
-### Instalaci�n ?
+### Instalación 🔧
 
 ```
 
@@ -21,7 +21,7 @@ docker-compose ps;
 ```
 
 
-## Ejecutando las pruebas ??
+## Ejecutando las pruebas ⚙️
 
 
 ```
@@ -37,11 +37,11 @@ curl http://0.0.0.0:1214/api/v1/productos/1/2019/4/USD/pruebas
 ```
 
 
-## Licencia ?
+## Licencia 📄
 
-Este proyecto est� bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
 
 
 ---
-?? con ?? por [dantelibralato](https://github.com/dantelibralato) ?
+⌨️ con ❤️ por [dantelibralato](https://github.com/dantelibralato) 😊
