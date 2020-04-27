@@ -33,13 +33,12 @@ curl http://0.0.0.0:1215/api/v1/tipocambio/20100411
 #API Principal
 curl http://0.0.0.0:1214/api/v1/productos/1/2019/4/USD/pruebas
 
-
 ```
 
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la [Licencia MIT](https://opensource.org/licenses/MIT).
 
 
 
