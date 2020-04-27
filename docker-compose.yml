@@ -1,4 +1,4 @@
-version: "3.3"
+version: "3.5"
 
 services:
   api-poc:
@@ -10,8 +10,6 @@ services:
       - ./api-poc:/var/www/html
     ports:
       - "1214:1214"
-    networks:
-      - swoole-lumen
     depends_on:
       - api-poc-tipo-cambio
 #   deploy:
@@ -30,16 +28,9 @@ services:
       - ./api-poc-tipo-cambio:/var/www/html
     ports:
       - "1215:1215"
-    networks:
-      - swoole-lumen
 #   deploy:
 #     resources:
 #       limits:
 #         cpus: '1'
 #         memory: 2Gi
-
-
-
-networks:
-  swoole-lumen:
 
