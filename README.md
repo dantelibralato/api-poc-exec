@@ -8,7 +8,7 @@ _Docker-Compose para el api principal y el api de tipo de cambio_
 ```
 
 git clone https://github.com/dantelibralato/api-poc-exec.git api-poc-exec;
-cd api-poc-exec;
+cd api-poc-exec/;
 git clone https://github.com/dantelibralato/api-poc.git api-poc;
 git clone https://github.com/dantelibralato/api-poc-tipo-cambio.git api-poc-tipo-cambio;
 
