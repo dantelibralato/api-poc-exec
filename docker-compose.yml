@@ -12,11 +12,14 @@ services:
       - "1214:1214"
     depends_on:
       - api-poc-tipo-cambio
-#   deploy:
-#     resources:
-#       limits:
-#         cpus: '1'
-#         memory: 2Gi
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2048M
+		reservations:
+          cpus: '0.5'
+          memory: 256M
 
 
   api-poc-tipo-cambio:
@@ -28,9 +31,12 @@ services:
       - ./api-poc-tipo-cambio:/var/www/html
     ports:
       - "1215:1215"
-#   deploy:
-#     resources:
-#       limits:
-#         cpus: '1'
-#         memory: 2Gi
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2048M
+		reservations:
+          cpus: '0.5'
+          memory: 256M
 
