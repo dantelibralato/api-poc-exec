@@ -17,7 +17,7 @@ services:
         limits:
           cpus: '1'
           memory: 2048M
-		reservations:
+        reservations:
           cpus: '0.5'
           memory: 256M
 
@@ -36,7 +36,7 @@ services:
         limits:
           cpus: '1'
           memory: 2048M
-		reservations:
+        reservations:
           cpus: '0.5'
           memory: 256M
 
